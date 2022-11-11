@@ -103,7 +103,7 @@
                             <div>
                                 <h1 class="blue">Colégio Farroupilha 01</h1>
                             </div>
-                            <div class="d-flex align-items-center flex-wrap">
+                            <!-- <div class="d-flex align-items-center flex-wrap">
                                 <div class="input-group mx-3 pb-2">
                                     <span class="input-group-text  " id="addon-wrapping"><i
                                             class="fa-solid fa-magnifying-glass gray"></i></span>
@@ -132,86 +132,185 @@
                                     </select>
                                 </div>
 
-                            </div>
+                            </div> -->
                         </div>
                         <!-- <p onclick="OpenCloseMenu()" class="text-end">Teste</p> -->
                         <div class="row mt-5">
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="text-decoration-none" href="cobranca-especifica.html">
-                                    <div class="card p-2 border-left-color-primary">
-                                        <div class="d-flex align-items-center justify-content-between px-2 pt-3">
-                                            <h3 class="text-center h4 black">Colégio Farroupilha</h3>
-                                            <p class="text-center black">1 de 3</p>
-                                        </div>
-                                        <p class="h4 px-2 mt-4 black">R$ 1.000,00</p>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <!-- PARCELA PAGA -->
+                                <div class="card p-2 border-left-color-secondary">
+                                    <div class="d-flex align-items-center justify-content-between px-2 pt-3 flex-wrap">
+                                        <h3 class="text-center h4 black">Colégio Farroupilha</h3>
+                                        <p class="text-center black">1 de 12</p>
                                     </div>
-                                </a>
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">Valor Total<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Valor Pago<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Saldo devido<br> <span>R$ 0,00</span></p>
+                                    </div>
+
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">N° Documento<br> <span>12345678-00</span></p>
+                                        <p class="black flex-grow-2">Vencimento<br> <span>10/07/2022</span></p>
+                                        <p class="black flex-grow-2">Situação<br> <span
+                                                class="rounded btn-green white px-3">Pago</span></p>
+                                    </div>
+
+                                    <div class="d-flex p-2 justify-content-between align-items-center flex-wrap">
+                                        <p class="black">Pagador<br> <span>Luciano Medice Antunes</span></p>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Opções
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-receipt px-1"></i> ver extrato</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- FIM PARCELA PAGA -->
                             </div>
 
-                            <div class="col-12 col-lg-4 mb-3">
-                                <div class="card p-2 border-left-color-secondary">
-                                    <div class="d-flex align-items-center justify-content-between px-2 pt-3">
+                            <div class="col-12 col-lg-6 mb-3">
+                                <!-- PARCELA PAGA PARCIALMENTE -->
+                                <div class="card p-2 border-left-color-third">
+                                    <div class="d-flex align-items-center justify-content-between px-2 pt-3 flex-wrap">
                                         <h3 class="text-center h4 black">Colégio Farroupilha</h3>
-                                        <p class="text-center black">1 de 3</p>
+                                        <p class="text-center black">2 de 12</p>
                                     </div>
-                                    <p class="h4 px-2 mt-4 black">R$ 1.000,00</p>
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">Valor Total<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Valor Pago<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Saldo devido<br> <span>R$ 0,00</span></p>
+                                    </div>
+
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">N° Documento<br> <span>12345678-00</span></p>
+                                        <p class="black flex-grow-2">Vencimento<br> <span>10/08/2022</span></p>
+                                        <p class="black flex-grow-2">Situação<br> <span
+                                                class="rounded btn-blue white px-3">Pago Parcialmente</span></p>
+                                    </div>
+
+                                    <div class="d-flex p-2 justify-content-between align-items-center flex-wrap">
+                                        <p class="black">Pagador<br> <span>Luciano Medice Antunes</span></p>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Opções
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-receipt px-1"></i> ver extrato</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- FIM PARCELA PAGA PARCIALMENTE -->
+                            </div>
+                            <!-- PARCELA NEGADA  -->
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="card p-2 border-left-color-four">
+                                    <div class="d-flex align-items-center justify-content-between px-2 pt-3 flex-wrap">
+                                        <h3 class="text-center h4 black">Colégio Farroupilha</h3>
+                                        <p class="text-center black">3 de 12</p>
+                                    </div>
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">Valor Total<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Valor Pago<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Saldo devido<br> <span>R$ 0,00</span></p>
+                                    </div>
+
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">N° Documento<br> <span>12345678-00</span></p>
+                                        <p class="black flex-grow-2">Vencimento<br> <span>10/09/2022</span></p>
+                                        <p class="black flex-grow-2">Situação<br> <span
+                                                class="rounded btn-red white px-3">Vencido</span></p>
+                                    </div>
+
+                                    <div class="d-flex p-2 justify-content-between align-items-center flex-wrap">
+                                        <p class="black">Pagador<br> <span>Luciano Medice Antunes</span></p>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Opções
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-receipt px-1"></i> ver extrato</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- FIM PARCELA NEGADA -->
 
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="text-decoration-none" href="cobranca-especifica.html">
-                                    <div class="card p-2 border-left-color-primary">
-                                        <div class="d-flex align-items-center justify-content-between px-2 pt-3">
-                                            <h3 class="text-center h4 black">Colégio Farroupilha</h3>
-                                            <p class="text-center black">1 de 3</p>
-                                        </div>
-                                        <p class="h4 px-2 mt-4 black">R$ 1.000,00</p>
+                            <!-- PARCELA PENDENTE -->
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="card p-2 border-left-color-primary">
+                                    <div class="d-flex align-items-center justify-content-between px-2 pt-3 flex-wrap">
+                                        <h3 class="text-center h4 black">Colégio Farroupilha</h3>
+                                        <p class="text-center black">4 de 12</p>
                                     </div>
-                                </a>
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="text-decoration-none" href="cobranca-especifica.html">
-                                    <div class="card p-2 border-left-color-primary">
-                                        <div class="d-flex align-items-center justify-content-between px-2 pt-3">
-                                            <h3 class="text-center h4 black">Colégio Farroupilha</h3>
-                                            <p class="text-center black">1 de 3</p>
-                                        </div>
-                                        <p class="h4 px-2 mt-4 black">R$ 1.000,00</p>
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">Valor Total<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Valor Pago<br> <span>R$ 2.500,00</span></p>
+                                        <p class="black flex-grow-2">Saldo devido<br> <span>R$ 0,00</span></p>
                                     </div>
-                                </a>
-                            </div>
 
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="text-decoration-none" href="cobranca-especifica.html">
-                                    <div class="card p-2 border-left-color-primary">
-                                        <div class="d-flex align-items-center justify-content-between px-2 pt-3">
-                                            <h3 class="text-center h4 black">Colégio Farroupilha</h3>
-                                            <p class="text-center black">1 de 3</p>
-                                        </div>
-                                        <p class="h4 px-2 mt-4 black">R$ 1.000,00</p>
+                                    <div class="d-flex p-2 justify-content-between flex-wrap">
+                                        <p class="black flex-grow-2">N° Documento<br> <span>12345678-00</span></p>
+                                        <p class="black flex-grow-2">Vencimento<br> <span>10/12/2022</span></p>
+                                        <p class="black flex-grow-2">Situação<br> <span
+                                                class="rounded btn-primary white px-3">Pendente</span></p>
                                     </div>
-                                </a>
-                            </div>
 
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="text-decoration-none" href="cobranca-especifica.html">
-                                    <div class="card p-2 border-left-color-primary">
-                                        <div class="d-flex align-items-center justify-content-between px-2 pt-3">
-                                            <h3 class="text-center h4 black">Colégio Farroupilha</h3>
-                                            <p class="text-center black">1 de 3</p>
-                                        </div>
-                                        <p class="h4 px-2 mt-4 black">R$ 1.000,00</p>
+                                    <div class="d-flex p-2 justify-content-between align-items-center flex-wrap">
+                                        <p class="black">Pagador<br> <span>Luciano Medice Antunes</span></p>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Opções
+                                        </button>
+                                        <ul class="dropdown-menu">
+
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop"><i
+                                                        class="fa-solid fa-barcode px-1"></i> Pagar</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-receipt px-1"></i> Ver extrato</a></li>
+                                        </ul>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-
+                            <!-- FIM PARCELA PENDENTE -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border-left-color-primary">
+                <div class="modal-header">
+                    <!-- <h2 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h2> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="container">
+                        <p class="text-center gray">Descrição</p>
+                        <h2 class="text-center black">Colégio Farroupilha</h2>
+                        <hr>
+                        <p class="text-center gray">Vencimento</p>
+                        <h2 class="text-center black">10/07/2022</h2>
+                        <p class="text-center gray">Parcela 2 de 12</p>
+                        <hr>
+                        <p class="text-center gray">Valor total (R$)</p>
+                        <h2 class="text-center black">2.500,00</h2>
+                        <button type="button" class="btn btn-green white w-100 mt-2">Pagar uma parte</button><br>
+                        <p class="text-center py-2"><a href="" class="gray">Pagar o valor total</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
