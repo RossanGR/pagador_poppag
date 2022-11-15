@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="bg-primary pt-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <img class="mx-auto d-block" src="assets/img/logo.png" title="Pop pag" alt="Pop pag" />
+                </div>
+                <div class="col-10">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <!-- <div>
+                            <i class="fa-solid fa-bell bg-white rounded-circle p-2"></i>
+                        </div> -->
+                        <div>
+                            <ul class="nav ">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle white" data-bs-toggle="dropdown" href="#"
+                                        role="button" aria-expanded="false">
+                                        <!-- rounded-circle -->
+                                        <img src="assets/img/profile-picture.png" alt="User" title="User" /> 
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Sair</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <!-- MENU -->
+                <div id="menu" class="col-2 bg-white d-xl-block col-lg-2">
+                    <div class="d-flex d-lg-none justify-content-between align-items-center pt-2">
+                        <h2>Menu</h2>
+                        <i onclick="OpenCloseMenu()" class="fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item py-3">
+                            <a class="nav-link active text-start btn bg-primary" aria-current="page" href="#">
+                                <i class="fa-solid fa-house gray px-2"></i>
+                                Início
+                            </a>
+                        </li>
+                        <li class="nav-item py-3">
+                            <a class="nav-link text-start btn" href="#">
+                                <i class="fa-solid fa-scroll gray px-2"></i>
+                                Extrato de pagamento
+                            </a>
+                        </li>
+                        <li class="nav-item py-3">
+                            <a class="nav-link text-start btn" href="#">
+                                <i class="fa-solid fa-bell gray px-2"></i>
+                                Notificações
+                            </a>
+                        </li>
+                        <li class="nav-item py-3">
+                            <a class="nav-link text-start btn" href="#">
+                                <i class="fa-solid fa-circle-question gray px-2"></i>
+                                Ajuda
+                            </a>
+                        </li>
+                        <li class="nav-item mt-5 ">
+                            <hr>
+                        </li>
+                        <li class="nav-item py-3 ">
+                            <a class="nav-link text-start btn">
+                                <i class="fa-solid fa-right-from-bracket gray px-2"></i>
+                                Sair</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- FIM MENU -->
+
+                <div class="col-12  col-sm-12 col-lg-10 col-xl-10 mt-5">
+                    <form>
+                        <div>
+                            <h2>Meu Perfil</h2>
+                            <div class="card bg-card py-5 px-4 mb-4">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                                        <div
+                                            class="bg-light d-flex justify-content-center align-items-center img-adapt">
+                                            <img src="./assets/img/avatar.png" alt="Avatar" title="Avatar" />
+                                        </div>
+                                        <input type="file" class="form-control mt-3" id="inputGroupFile02">
+                                    </div>
+                                    <div class="col-12 col-md-9 col-lg-9 col-xl-9 mt-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                                                <label class="gray pb-2 fw-semibold">Nome completo</label>
+                                                <div class="input-group flex-nowrap mb-5">
+                                                    <span class="input-group-text pt-3 pb-3 rounded-0"
+                                                        id="addon-wrapping"><i class="fa-solid fa-user gray"></i></span>
+                                                    <input type="text"
+                                                        class="form-control form-control-custom pt-3 pb-3 rounded-0"
+                                                        placeholder="Username" aria-label="Username"
+                                                        aria-describedby="addon-wrapping">
+                                                </div>
+
+                                                <label class="gray pb-2 fw-semibold">Celular</label>
+                                                <div class="input-group flex-nowrap mb-5">
+                                                    <span class="input-group-text pt-3 pb-3 rounded-0"
+                                                        id="addon-wrapping"><i
+                                                            class="fa-solid fa-phone gray"></i></span>
+                                                    <input type="text"
+                                                        class="form-control form-control-custom pt-3 pb-3 rounded-0"
+                                                        placeholder="celular" aria-label="celular"
+                                                        aria-describedby="addon-wrapping">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                                                <label class="gray pb-2 fw-semibold">E-mail</label>
+                                                <div class="input-group flex-nowrap mb-5">
+                                                    <span class="input-group-text pt-3 pb-3 rounded-0"
+                                                        id="addon-wrapping"><i
+                                                            class="fa-solid fa-envelope gray"></i></span>
+                                                    <input type="text"
+                                                        class="form-control form-control-custom pt-3 pb-3 rounded-0"
+                                                        placeholder="E-mail" aria-label="E-mail"
+                                                        aria-describedby="addon-wrapping">
+                                                </div>
+
+                                                <label class="gray pb-2 fw-semibold">Data de nascimento</label>
+                                                <div class="input-group flex-nowrap">
+
+                                                    <input type="date"
+                                                        class="form-control form-control-custom pt-3 pb-3 rounded-0"
+                                                        placeholder="Username" aria-label="Username"
+                                                        aria-describedby="addon-wrapping">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-card py-5 px-4 mb-3">
+                                <h2>Endereço</h2>
+                                <div class="row">
+                                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+                                    <label class="gray pb-2 fw-semibold">CEP</label>
+                                    <div class="input-group flex-nowrap mb-4">
+                                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                          class="fa-solid fa-map-location-dot gray"></i></span>
+                                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                                        placeholder="Digite seu CEP" aria-label="Digite seu CEP" aria-describedby="addon-wrapping">
+                                    </div>
+                                  </div>
+                
+                                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+                                    <label class="gray pb-2 fw-semibold">Estado</label>
+                                    <div class="input-group mb-4">
+                                      <label class="input-group-text rounded-0" for="inputGroupSelect01"><i
+                                          class="fa-solid fa-map-location-dot gray"></i></label>
+                                      <select class="form-select form-control-custom p-2 pb-2 rounded-0" id="inputGroupSelect01">
+                                        <option selected>Selecione uma opção</option>
+                                        <option value="1">Percentual</option>
+                                        <option value="2">Valor fixo</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                
+                                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+                                    <label class="gray pb-2 fw-semibold">País</label>
+                                    <div class="input-group mb-4">
+                                      <label class="input-group-text rounded-0" for="inputGroupSelect01"><i
+                                          class="fa-solid fa-earth-americas gray"></i></label>
+                                      <select class="form-select form-control-custom p-2 pb-2 rounded-0" id="inputGroupSelect01">
+                                        <option selected>Selecione uma opção</option>
+                                        <option value="1">Percentual</option>
+                                        <option value="2">Valor fixo</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="row">
+                                  <div class="col-12 col-md-8 col-lg-8 col-xl-8 mt-2">
+                                    <label class="gray pb-2 fw-semibold">Endereço</label>
+                                    <div class="input-group flex-nowrap mb-4">
+                                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                          class="fa-solid fa-map-location-dot gray"></i></span>
+                                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                                        placeholder="Digite seu endereço" aria-label="Digite seu endereço"
+                                        aria-describedby="addon-wrapping">
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                                    <label class="gray pb-2 fw-semibold">Número</label>
+                                    <div class="input-group flex-nowrap mb-4">
+                                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                          class="fa-solid fa-map-location-dot gray"></i></span>
+                                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                                        placeholder="Digite seu número" aria-label="Digite seu número"
+                                        aria-describedby="addon-wrapping">
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="row">
+                                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                                    <label class="gray pb-2 fw-semibold">Completamento</label>
+                                    <div class="input-group flex-nowrap mb-4">
+                                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                          class="fa-solid fa-map-location-dot gray"></i></span>
+                                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                                        placeholder="Digite seu complemente" aria-label="Digite seu complemente"
+                                        aria-describedby="addon-wrapping">
+                                    </div>
+                                  </div>
+                
+                                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                                    <label class="gray pb-2 fw-semibold">Bairro</label>
+                                    <div class="input-group flex-nowrap mb-4">
+                                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                          class="fa-solid fa-city gray"></i></span>
+                                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                                        placeholder="Digite seu bairro" aria-label="Digite seu bairro"
+                                        aria-describedby="addon-wrapping">
+                                    </div>
+                                  </div>
+                
+                                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                                    <label class="gray pb-2 fw-semibold">Cidade</label>
+                                    <div class="input-group flex-nowrap mb-4">
+                                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                          class="fa-solid fa-city gray"></i></span>
+                                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                                        placeholder="Digite sua cidade" aria-label="Digite sua cidade"
+                                        aria-describedby="addon-wrapping">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>  
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
